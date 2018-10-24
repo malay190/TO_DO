@@ -9,7 +9,7 @@ root=Tk()
 root.title("To-Do")                 #Title of Root Window
 root.geometry("300x250+300+300")
 root.resizable(True,True)
-root.config(bg="light pink")
+root.config(bg="light blue")
 #Empty list for some operations like asc_order and desc_order,remove,num_of_tasks etc.As these operatios on Listbox is not applicable.
 task_list=[]
 s= StringVar()
@@ -58,7 +58,7 @@ def num_of_task():
     random_choose_lable.config(text=j)
 
 def exit():
-    result=messagebox.askyesno("ALERT","do you want to exit")
+    result=messagebox.askyesno("ALERT","exit")
     if result==TRUE:
         sys.exit()
     else:
@@ -69,25 +69,25 @@ random_choose_lable.grid(row=3,column=3)
 # label=Label(root,text="To-Do List")
 # label.grid(row=0,column=0)
 
-add_item_button=Button(root,text="Add to-do item",width=18,command=add_task,bg="light blue")
+add_item_button=Button(root,text="Add to-do item",width=18,command=add_task,bg="blue")
 add_item_button.grid(row=1,column=0)
 
-clr_task_button=Button(root,text="Clear all tasks",width=18,command=clear_task,bg="light blue")
+clr_task_button=Button(root,text="Clear all tasks",width=18,command=clear_task,bg="blue")
 clr_task_button.grid(row=2,column=0)
 
-remove_button=Button(root,text="Remove",width=18,command=remove,bg="light blue")
+remove_button=Button(root,text="Remove",width=18,command=remove,bg=" blue")
 remove_button.grid(row=3,column=0)
 
-asc_sort_button=Button(root,text="Ascending sort",width=18,command=asc_order,bg="light blue")
+asc_sort_button=Button(root,text="Ascending sort",width=18,command=asc_order,bg="blue")
 asc_sort_button.grid(row=4,column=0)
 
-sort_desc_button=Button(root,text="Sort(DESC)",width=18,command=desc_sort,bg="light blue")
+sort_desc_button=Button(root,text="Sort(DESC)",width=18,command=desc_sort,bg="blue")
 sort_desc_button.grid(row=5,column=0)
 
-choose_random_button=Button(root,text="Choose Random",width=18,command=choose_random,bg="light blue")
+choose_random_button=Button(root,text="Choose Random",width=18,command=choose_random,bg="blue")
 choose_random_button.grid(row=6,column=0)
 
-number_of_tasks_button=Button(root,text="Number of Tasks",width=18,command=num_of_task,bg="light blue")
+number_of_tasks_button=Button(root,text="Number of Tasks",width=18,command=num_of_task,bg="blue")
 number_of_tasks_button.grid(row=7,column=0)
 
 
