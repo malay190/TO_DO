@@ -6,9 +6,9 @@ from tkinter import messagebox
 
 
 root=Tk()
-root.title("To-Do")                 #Title of Root Window
+root.title("To-Do-List")                 #Title of Root Window
 root.geometry("300x250+300+300")
-root.resizable(True,True)
+root.resizable(False,False)
 root.config(bg="light pink")
 #Empty list for some operations like asc_order and desc_order,remove,num_of_tasks etc.As these operatios on Listbox is not applicable.
 task_list=[]
