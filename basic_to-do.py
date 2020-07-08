@@ -1,11 +1,5 @@
-import tkinter
-from tkinter import *
-import sys
-import random
-from tkinter import messagebox
 
 
-root=Tk()
 root.title("To-Do-List")                 #Title of Root Window
 root.geometry("300x250+300+300")
 root.resizable(False,False)
