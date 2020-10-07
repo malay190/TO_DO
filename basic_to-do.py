@@ -41,15 +41,6 @@ def asc_order():
     task_list.sort()
     update_mylist()
 
-def desc_sort():
-    task_list.sort()
-    task_list.reverse()
-    update_mylist()
-
-def choose_random():
-   random.shuffle(task_list)
-   random_task=task_list[0]
-   random_choose_lable.config(text=random_task)
 
 def num_of_task():
     j=0                                 #OR--->>To calculate number of tasks just check len(task_list)
